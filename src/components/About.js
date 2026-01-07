@@ -79,6 +79,10 @@ const About = () => {
               </p>
 
               <p className="text-gray-300 text-lg leading-relaxed">
+                I am currently studying BSCS (expected 2027).
+              </p>
+
+              <p className="text-gray-300 text-lg leading-relaxed">
                 When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing knowledge through tech blogs and mentoring.
               </p>
 
@@ -118,14 +122,14 @@ const About = () => {
                 transition={{ duration: 8, repeat: Infinity, ease: 'linear' }}
                 className="absolute inset-0 bg-gradient-to-r from-accent to-blue-400 rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity"
               />
-              <div className="relative bg-secondary/50 backdrop-blur border border-accent/30 rounded-3xl p-8 h-80 flex items-center justify-center overflow-hidden">
-                <motion.div
-                  animate={{ rotate: [0, 10, -10, 0] }}
-                  transition={{ duration: 4, repeat: Infinity }}
-                  className="text-8xl"
-                >
-                  👨‍💻
-                </motion.div>
+              <div className="relative bg-secondary/50 backdrop-blur border border-accent/30 rounded-3xl p-6 h-96 sm:h-104 flex items-center justify-center overflow-hidden">
+                <motion.img
+                  src="/profile.png"
+                  alt="Muhammad Ahmed"
+                  animate={{ rotate: [0, 1, -1, 0], scale: [1, 1.01, 1] }}
+                  transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
+                  className="w-64 h-72 sm:w-80 sm:h-80 rounded-2xl object-cover object-top shadow-2xl"
+                />
               </div>
             </motion.div>
           </motion.div>

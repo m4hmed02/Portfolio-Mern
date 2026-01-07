@@ -76,6 +76,21 @@ const Skills = () => {
           />
         </motion.div>
 
+        {/* Technologies Row (user-provided) */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          viewport={{ once: true }}
+          className="flex flex-wrap gap-3 justify-center mb-10"
+        >
+          {['React','Node','Express','Next.js','Redux','HTML','CSS','JavaScript','Python','NestJS'].map((tech) => (
+            <span key={tech} className="px-3 py-1 bg-accent/10 border border-accent/30 rounded-full text-accent text-sm font-medium">
+              {tech}
+            </span>
+          ))}
+        </motion.div>
+
         {/* Skills Grid */}
         <motion.div
           variants={containerVariants}

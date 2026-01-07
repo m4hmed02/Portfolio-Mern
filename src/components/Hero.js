@@ -57,11 +57,13 @@ const Hero = () => {
           variants={itemVariants}
           className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
         >
-          <span className="bg-gradient-to-r from-accent via-blue-400 to-cyan-400 bg-clip-text text-transparent">
-            Full Stack Developer
+          <span className="block bg-gradient-to-r from-accent via-blue-400 to-cyan-400 bg-clip-text text-transparent">
+            Muhammad Ahmed
           </span>
           <br />
-          <span className="text-gray-200">& Creative Technologist</span>
+          <span className="text-2xl sm:text-3xl font-semibold text-gray-200 block">
+            Full Stack Developer & Creative Technologist
+          </span>
         </motion.h1>
 
         <motion.p
@@ -74,7 +76,7 @@ const Hero = () => {
 
         <motion.div
           variants={itemVariants}
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+          className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12"
         >
           <motion.a
             href="#projects"
@@ -112,17 +114,19 @@ const Hero = () => {
         </motion.div>
 
         {/* Scroll Indicator */}
+        {/* Scroll indicator placed in document flow to avoid overlapping CTAs */}
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+          className="mt-8 flex flex-col items-center gap-3 z-10"
         >
-          <div className="text-gray-400 text-sm mb-2">Scroll to explore</div>
-          <div className="w-6 h-10 border-2 border-accent rounded-full flex items-center justify-center">
+          <div className="text-center text-gray-400 text-sm">Scroll to explore</div>
+
+          <div className="w-8 h-12 border-2 border-accent rounded-full flex items-center justify-center bg-transparent">
             <motion.div
               animate={{ y: [0, 8, 0] }}
               transition={{ duration: 2, repeat: Infinity }}
-              className="w-1 h-2 bg-accent rounded-full"
+              className="w-1.5 h-2.5 bg-accent rounded-full"
             />
           </div>
         </motion.div>

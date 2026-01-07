@@ -35,7 +35,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
             className="text-2xl font-bold bg-gradient-to-r from-accent to-blue-400 bg-clip-text text-transparent"
           >
-            Portfolio
+            Muhammad Ahmed
           </motion.div>
 
           {/* Desktop Menu */}

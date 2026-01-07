@@ -43,7 +43,7 @@ const Footer = () => {
           {/* Brand */}
           <motion.div variants={itemVariants}>
             <h3 className="text-2xl font-bold bg-gradient-to-r from-accent to-blue-400 bg-clip-text text-transparent mb-4">
-              Portfolio
+              Muhammad Ahmed
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed">
               Building amazing digital experiences with modern technologies and creative solutions.
