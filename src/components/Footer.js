@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Github, Linkedin, Facebook, Instagram, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -28,8 +29,8 @@ const Footer = () => {
       {/* Background Blur */}
       <motion.div
         animate={{ rotate: 360 }}
-        transition={{ duration: 40, repeat: Infinity, ease: 'linear' }}
-        className="absolute top-0 right-0 w-80 h-80 bg-accent/5 rounded-full blur-3xl"
+        transition={{ duration: 50, repeat: Infinity, ease: 'linear' }}
+        className="absolute top-0 right-0 w-80 h-80 bg-accent/5 rounded-full blur-lg opacity-30"
       />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
@@ -69,24 +70,63 @@ const Footer = () => {
 
           {/* Social Links */}
           <motion.div variants={itemVariants}>
-            <h4 className="font-semibold mb-4 text-white">Follow Me</h4>
-            <div className="flex gap-4">
-              {[
-                { name: 'GitHub', url: '#' },
-                { name: 'LinkedIn', url: '#' },
-                { name: 'Twitter', url: '#' },
-              ].map((social) => (
-                <motion.a
-                  key={social.name}
-                  href={social.url}
-                  whileHover={{ scale: 1.1, y: -3 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="w-10 h-10 rounded-full bg-secondary border border-accent/30 flex items-center justify-center text-accent hover:border-accent transition-colors"
-                  title={social.name}
-                >
-                  {social.name.charAt(0)}
-                </motion.a>
-              ))}
+            <h4 className="font-semibold mb-4 text-white">Connect With Me</h4>
+            <div className="flex flex-wrap gap-4">
+              <motion.a
+                href="https://github.com/m4hmed02"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.1, y: -3 }}
+                whileTap={{ scale: 0.95 }}
+                className="w-10 h-10 rounded-full bg-secondary border border-accent/30 flex items-center justify-center text-accent hover:border-accent transition-colors"
+                title="GitHub"
+              >
+                <Github size={18} />
+              </motion.a>
+              <motion.a
+                href="https://www.linkedin.com/in/dev-mahmed/"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.1, y: -3 }}
+                whileTap={{ scale: 0.95 }}
+                className="w-10 h-10 rounded-full bg-secondary border border-accent/30 flex items-center justify-center text-accent hover:border-accent transition-colors"
+                title="LinkedIn"
+              >
+                <Linkedin size={18} />
+              </motion.a>
+              <motion.a
+                href="https://www.facebook.com/profile.php?id=100052710263423"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.1, y: -3 }}
+                whileTap={{ scale: 0.95 }}
+                className="w-10 h-10 rounded-full bg-secondary border border-accent/30 flex items-center justify-center text-accent hover:border-accent transition-colors"
+                title="Facebook"
+              >
+                <Facebook size={18} />
+              </motion.a>
+              <motion.a
+                href="https://www.instagram.com/m4hmed._.2/"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.1, y: -3 }}
+                whileTap={{ scale: 0.95 }}
+                className="w-10 h-10 rounded-full bg-secondary border border-accent/30 flex items-center justify-center text-accent hover:border-accent transition-colors"
+                title="Instagram"
+              >
+                <Instagram size={18} />
+              </motion.a>
+              <motion.a
+                href="https://wa.me/923115168949"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.1, y: -3 }}
+                whileTap={{ scale: 0.95 }}
+                className="w-10 h-10 rounded-full bg-secondary border border-accent/30 flex items-center justify-center text-accent hover:border-accent transition-colors"
+                title="WhatsApp"
+              >
+                <MessageCircle size={18} />
+              </motion.a>
             </div>
           </motion.div>
         </motion.div>

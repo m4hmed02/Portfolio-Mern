@@ -54,8 +54,8 @@ const Contact = () => {
       {/* Background Elements */}
       <motion.div
         animate={{ rotate: -360 }}
-        transition={{ duration: 25, repeat: Infinity, ease: 'linear' }}
-        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-accent/5 rounded-full blur-3xl"
+        transition={{ duration: 40, repeat: Infinity, ease: 'linear' }}
+        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-accent/5 rounded-full blur-lg opacity-30"
       />
 
       <div className="max-w-4xl mx-auto relative z-10">
@@ -100,19 +100,19 @@ const Contact = () => {
               {
                 icon: Mail,
                 title: 'Email',
-                value: 'hello@example.com',
-                link: 'mailto:hello@example.com',
+                value: '2704muhammadahmed@gmail.com',
+                link: 'mailto:2704muhammadahmed@gmail.com',
               },
               {
                 icon: Phone,
                 title: 'Phone',
-                value: '+1 (555) 123-4567',
-                link: 'tel:+15551234567',
+                value: '+92 3115168949',
+                link: 'tel:+923115168949',
               },
               {
                 icon: MapPin,
                 title: 'Location',
-                value: 'San Francisco, CA',
+                value: 'Islamabad, Pakistan',
               },
             ].map((contact, idx) => (
               <motion.a

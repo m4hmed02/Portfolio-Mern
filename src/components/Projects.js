@@ -8,57 +8,12 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      description: 'A full-featured e-commerce platform with real-time inventory management, payment integration, and admin dashboard.',
+      title: 'E-Commerce Store with Admin Panel',
+      description: 'A full-featured e-commerce platform with real-time inventory management, payment integration, and admin dashboard for managing products, orders, and customers.',
       image: '🛒',
       tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      link: '#',
-      github: '#',
-    },
-    {
-      id: 2,
-      title: 'Project Management App',
-      description: 'Collaborative project management tool with real-time updates, team collaboration features, and advanced analytics.',
-      image: '📊',
-      tags: ['React', 'Firebase', 'Tailwind', 'Framer Motion'],
-      link: '#',
-      github: '#',
-    },
-    {
-      id: 3,
-      title: 'AI Chat Assistant',
-      description: 'AI-powered chat assistant with natural language processing, context awareness, and multi-language support.',
-      image: '🤖',
-      tags: ['React', 'OpenAI', 'Express', 'PostgreSQL'],
-      link: '#',
-      github: '#',
-    },
-    {
-      id: 4,
-      title: 'Social Media Dashboard',
-      description: 'Unified social media management platform for scheduling posts, analytics, and engagement tracking.',
-      image: '📱',
-      tags: ['Next.js', 'GraphQL', 'MongoDB', 'Redis'],
-      link: '#',
-      github: '#',
-    },
-    {
-      id: 5,
-      title: 'Music Streaming Service',
-      description: 'Full-featured music streaming platform with playlist management, recommendations, and offline playback.',
-      image: '🎵',
-      tags: ['React Native', 'Node.js', 'AWS', 'WebSocket'],
-      link: '#',
-      github: '#',
-    },
-    {
-      id: 6,
-      title: 'Learning Platform',
-      description: 'Online learning platform with video courses, interactive quizzes, progress tracking, and certifications.',
-      image: '📚',
-      tags: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
-      link: '#',
-      github: '#',
+      link: 'https://github.com/m4hmed02/Ecommerce-Store-With-Admin-Panel',
+      github: 'https://github.com/m4hmed02/Ecommerce-Store-With-Admin-Panel',
     },
   ];
 
@@ -86,8 +41,8 @@ const Projects = () => {
       {/* Background Elements */}
       <motion.div
         animate={{ rotate: 360 }}
-        transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
-        className="absolute -bottom-40 right-0 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl"
+        transition={{ duration: 50, repeat: Infinity, ease: 'linear' }}
+        className="absolute -bottom-40 right-0 w-80 h-80 bg-blue-500/10 rounded-full blur-lg opacity-30"
       />
 
       <div className="max-w-6xl mx-auto relative z-10">
@@ -172,6 +127,8 @@ const Projects = () => {
                 <div className="flex gap-3 pt-4 border-t border-secondary">
                   <motion.a
                     href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                     className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-accent/10 border border-accent/50 rounded-lg text-accent hover:bg-accent/20 transition-colors"
@@ -181,6 +138,8 @@ const Projects = () => {
                   </motion.a>
                   <motion.a
                     href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                     className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-accent/10 border border-accent/50 rounded-lg text-accent hover:bg-accent/20 transition-colors"
@@ -204,7 +163,7 @@ const Projects = () => {
         >
           <p className="text-gray-400 mb-6">Interested in seeing more?</p>
           <motion.a
-            href="https://github.com"
+            href="https://github.com/m4hmed02"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}

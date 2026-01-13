@@ -27,8 +27,8 @@ const About = () => {
         {/* Background Blur */}
         <motion.div
           animate={{ rotate: 360 }}
-          transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
-          className="absolute -top-40 right-0 w-80 h-80 bg-accent/5 rounded-full blur-3xl"
+          transition={{ duration: 40, repeat: Infinity, ease: 'linear' }}
+          className="absolute -top-40 right-0 w-80 h-80 bg-accent/5 rounded-full blur-lg opacity-30"
         />
 
         <motion.div
@@ -66,7 +66,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid md:grid-cols-2 gap-12 items-center"
+            className="grid md:grid-cols-2 gap-12 items-start"
           >
             {/* Text Content */}
             <motion.div variants={itemVariants} className="space-y-6">
@@ -75,7 +75,7 @@ const About = () => {
               </p>
 
               <p className="text-gray-300 text-lg leading-relaxed">
-                My journey in web development started 5+ years ago, and since then, I've worked with diverse teams and industries, delivering high-quality products that users love.
+                My journey in web development started 2+ years ago, and since then, I've worked with diverse teams and industries, delivering high-quality products that users love.
               </p>
 
               <p className="text-gray-300 text-lg leading-relaxed">
@@ -83,46 +83,47 @@ const About = () => {
               </p>
 
               <p className="text-gray-300 text-lg leading-relaxed">
-                When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing knowledge through tech blogs and mentoring.
+                I specialize in building scalable applications and user-friendly interfaces that solve real-world problems. My focus is on clean code, best practices, and continuous learning in the ever-evolving tech landscape.
               </p>
 
               {/* Quick Facts */}
               <motion.div
                 variants={itemVariants}
-                className="space-y-3 pt-6 border-t border-secondary"
+                className="space-y-3 pt-8 border-t border-secondary mt-6"
               >
                 <div className="flex items-center gap-3">
                   <span className="text-accent">▸</span>
                   <span className="text-gray-300">
-                    <strong>Location:</strong> San Francisco, CA
+                    <strong>Location:</strong> Islamabad, Pakistan
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="text-accent">▸</span>
                   <span className="text-gray-300">
-                    <strong>Email:</strong> hello@example.com
+                    <strong>Email:</strong> 2704muhammadahmed@gmail.com
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="text-accent">▸</span>
                   <span className="text-gray-300">
-                    <strong>LinkedIn:</strong> linkedin.com/in/yourprofile
+                    <strong>Phone:</strong> +92 3115168949
                   </span>
                 </div>
               </motion.div>
             </motion.div>
 
+
             {/* Image/Avatar */}
             <motion.div
               variants={itemVariants}
-              className="relative group"
+              className="relative group flex justify-center items-center"
             >
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 8, repeat: Infinity, ease: 'linear' }}
                 className="absolute inset-0 bg-gradient-to-r from-accent to-blue-400 rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity"
               />
-              <div className="relative bg-secondary/50 backdrop-blur border border-accent/30 rounded-3xl p-6 h-96 sm:h-104 flex items-center justify-center overflow-hidden">
+              <div className="relative bg-secondary/50 backdrop-blur border border-accent/30 rounded-3xl p-6 flex items-center justify-center overflow-hidden">
                 <motion.img
                   src="/profile.png"
                   alt="Muhammad Ahmed"

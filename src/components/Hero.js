@@ -31,13 +31,13 @@ const Hero = () => {
       {/* Background Elements */}
       <motion.div
         animate={{ rotate: 360 }}
-        transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-        className="absolute top-20 left-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl"
+        transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
+        className="absolute top-20 left-10 w-72 h-72 bg-accent/10 rounded-full blur-lg opacity-30"
       />
       <motion.div
         animate={{ rotate: -360 }}
-        transition={{ duration: 25, repeat: Infinity, ease: 'linear' }}
-        className="absolute bottom-20 right-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl"
+        transition={{ duration: 40, repeat: Infinity, ease: 'linear' }}
+        className="absolute bottom-20 right-10 w-72 h-72 bg-blue-500/10 rounded-full blur-lg opacity-30"
       />
 
       {/* Content */}
@@ -62,7 +62,7 @@ const Hero = () => {
           </span>
           <br />
           <span className="text-2xl sm:text-3xl font-semibold text-gray-200 block">
-            Full Stack Developer & Creative Technologist
+            Full Stack Developer
           </span>
         </motion.h1>
 

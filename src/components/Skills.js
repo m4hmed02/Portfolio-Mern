@@ -49,8 +49,8 @@ const Skills = () => {
       {/* Background Elements */}
       <motion.div
         animate={{ rotate: -360 }}
-        transition={{ duration: 25, repeat: Infinity, ease: 'linear' }}
-        className="absolute top-0 left-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl"
+        transition={{ duration: 40, repeat: Infinity, ease: 'linear' }}
+        className="absolute top-0 left-0 w-96 h-96 bg-accent/5 rounded-full blur-lg opacity-30"
       />
 
       <div className="max-w-6xl mx-auto relative z-10">
